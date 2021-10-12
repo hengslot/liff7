@@ -51,7 +51,10 @@
   <script>
     async function sendShare() {
       const result = await liff.shareTargetPicker([{
-        {
+        "type": "flex",
+        "altText": "มารับเครดิตฟรีกันเถอะ",
+    "type": "flex",
+    "contents": {
   "type": "carousel",
   "contents": [
     {
@@ -224,7 +227,7 @@
     }
     async function main() {
       await liff.init({
-        liffId: "1656526827-pGPJjxlB"
+        liffId: "1656526180-BQ95Amdq"
       })
       if (!liff.isLoggedIn()) {
         liff.login()
